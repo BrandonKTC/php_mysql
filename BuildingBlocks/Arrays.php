@@ -25,6 +25,29 @@
     <pre>
         <?php echo print_r($Food); ?>
     </pre>
+    <hr>
+    <?php
+    $numbers = array(8, 25, 45, 60, 168, 500, 999);
+    print_r($numbers);
+    ?>
+    <hr>
+    <?php
+    echo current($numbers) . "<br>";
+    next($numbers); // next index
+    echo current($numbers) . "<br>";
+    next($numbers);
+    echo current($numbers) . "<br>";
+    next($numbers);
+    next($numbers);
+    echo current($numbers) . "<br>";
+    reset($numbers); // reset index to 0
+    echo current($numbers) . "<br>";
+    end($numbers); // Go to the end
+    echo current($numbers) . "<br>";
+    next($numbers);
+    echo current($numbers) . "<br>";
+
+    ?>
 
 </body>
 
